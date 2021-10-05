@@ -12,7 +12,8 @@ def barv_npsmean_by(dataframe, axisX):
     ax.set_ylabel("NPS interno mensal médio")
     ax.set_yticks(np.array(range(0, 11, 1)))
     ax.set_title(f"Média de NPS Interno Mensal por {axisX}")
-    return fig.savefig('graph_last_generate.png')
+    fig.savefig('graph_last_generate.png')
+    return plt.close(fig) 
 
 def hist_nps(dataframe):
     fig = plt.figure()
