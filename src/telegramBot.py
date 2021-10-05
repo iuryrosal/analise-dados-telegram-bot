@@ -27,7 +27,6 @@ class TelegramBot():
                         update_id = message['update_id']
                         chat_id = message['message']['from']['id']
                         message_text = message['message']['text']
-                        print("Criando mensagem...")
                         answer_bot, figure_boolean = self.create_answer(message_text)
                         self.send_answer(chat_id, answer_bot, figure_boolean)
                     except:
