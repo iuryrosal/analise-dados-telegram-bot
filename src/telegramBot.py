@@ -65,7 +65,7 @@ class TelegramBot():
             requests.get(link_to_send)
             return
         else:
-            figure = r"G:\iuryrosaltech\Youtube\Projetos\analise-dados-telegram-bot\graph_last_generate.png"
+            figure = r".\graph_last_generate.png"
             files = {
                 "photo": open(figure, "rb")
             }
