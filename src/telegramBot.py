@@ -5,6 +5,7 @@ import json
 from src.data.driveBot import driveBot
 from src.data.transform_dataframe import transform_data
 from src.visualization.visualize import barv_npsmean_by, hist_nps
+from PIL import Image
 
 
 load_dotenv()
@@ -65,10 +66,7 @@ class TelegramBot():
             requests.get(link_to_send)
             return
         else:
-            figure = r".\graph_last_generate.png"
-            files = {
-                "photo": open(figure, "rb")
-            }
-            link_to_send = f"{self.url}sendPhoto?chat_id={chat_id}"
-            requests.post(link_to_send, files = files)
+            answer.seek(0)
+            requests.post(f"{self.url}sendPhoto?chat_id={chat_id}", files = dict(photo=answer))
+            answer.close()
             return
