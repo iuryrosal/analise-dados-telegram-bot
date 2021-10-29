@@ -42,11 +42,9 @@ class TelegramBot():
     
     def create_answer(self, message_text):
         dataframe = transform_data(self.driveBot.get_data())
+        message_text = message_text.lower()
         if message_text in ["/start", "ola", "eae", "menu", "oi", "oie"]:
-            return ''' Ola, tudo bem? Seja bem vindo ao Bot do RH da Empresa RDS. Selecione o que deseja:\n
-                        1 - NPS interno mensal médio por setor\n
-                        2 - NPS interno mensal médio por contratação\n
-                        3 - Distribuição do NPS interno\n''', 0
+            return "Ola, tudo bem? Seja bem vindo ao Bot do RH da Empresa RDS. Selecione o que deseja:" + "\n" + "1 - NPS interno mensal médio por setor" + "\n" + "2 - NPS interno mensal médio por contratação" + "\n" + "3 - Distribuição do NPS interno" + "\n", 0
         elif message_text == '1':
             return barv_npsmean_by(dataframe, "Setor"), 1
         elif message_text == '2':
@@ -54,11 +52,7 @@ class TelegramBot():
         elif message_text == '3':
             return hist_nps(dataframe), 1
         else:
-            return '''Não entendi... por favor tente novamente... \n
-                    Selecione o que deseja:\n
-                    1 - NPS interno mensal médio por setor\n
-                    2 - NPS interno mensal médio por contratação\n
-                    3 - Distribuição do NPS interno\n''', 0
+            return "Comando não encontrado, tente novamente. Selecione o que deseja:" + "\n" + "1 - NPS interno mensal médio por setor" + "\n" + "2 - NPS interno mensal médio por contratação" + "\n" + "3- Distribuição do NPS interno" + "\n", 0
     
     def send_answer(self, chat_id, answer, figure_boolean):
         if figure_boolean == 0:

@@ -17,8 +17,6 @@ def barv_npsmean_by(dataframe, axisX):
     ax.set_title(f"Média de NPS Interno Mensal por {axisX}")
     fig.savefig(buf, format='png')
     plt.close(fig)
-    print("####")
-    print(buf)
     return buf
 
 def hist_nps(dataframe):
