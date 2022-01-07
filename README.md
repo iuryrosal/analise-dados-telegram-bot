@@ -5,7 +5,7 @@ Este projeto foi documentado aqui no GitHub e no meu canal do Youtube, sendo uma
 
 Assista a playlist:
 
-[![Bot Telegram de Analise de Dados com Python](http://img.youtube.com/vi/IJGGPkNg8ZI/0.jpg)](https://www.youtube.com/watch?v=IJGGPkNg8ZI "Bot Telegram de Analise de Dados com Python")
+[![Bot Telegram de Analise de Dados com Python](http://img.youtube.com/vi/IJGGPkNg8ZI/0.jpg)](https://www.youtube.com/playlist?list=PLshkB4NQEfC7ZJqmnKcjsJBzv9p2CeNNr "Bot Telegram de Analise de Dados com Python")
 
 ## Escopo do Projeto
 O produto final deve ser um bot de Telegram que retornará visualizações de dados solicitadas pelo usuário. Essas visualizações são geradas a partir de dados que devem ser extraídos de uma base de dados presente em um Google Planilhas dentro do Google Drive da empresa, de forma automatizada. A implementação do bot de Telegram deve ser feita na linguagem Python, com o uso da API de bots do Telegram. As visualizações e a automação de extração de dados também deve ser feita via Python.
