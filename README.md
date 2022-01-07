@@ -1,9 +1,19 @@
-analise-dados-telegram-bot
-==============================
+# Bot de Telegram de Analise de Dados
+=======================================
 
-Bot de Telegram voltado para Analise de Dados ficticios de RH, aliado a um projeto gravado em vídeo para o canal "Iury Rosal - Resumo do Sucesso"
+Este projeto foi documentado aqui no GitHub e no meu canal do Youtube, sendo uma forma de compartilhar os desafios e aprendizados que tive com esse projeto para outras pessoas.
 
-Project Organization
+Assista a playlist abaixo:
+![Projeto I | Bot Telegram de Análise de Dados](https://img.youtube.com/viIJGGPkNg8ZI/0.jpg)](https://youtube.com/playlist?list=PLshkB4NQEfC7ZJqmnKcjsJBzv9p2CeNNr)
+
+## Escopo do Projeto
+O produto final deve ser um bot de Telegram que retornará visualizações de dados solicitadas pelo usuário. Essas visualizações são geradas a partir de dados que devem ser extraídos de uma base de dados presente em um Google Planilhas dentro do Google Drive da empresa, de forma automatizada. A implementação do bot de Telegram deve ser feita na linguagem Python, com o uso da API de bots do Telegram. As visualizações e a automação de extração de dados também deve ser feita via Python.
+
+Os dados são ficticios e simulam uma situação do RH da empresa. 
+
+**Situação Simulada e Ficticia**: O RH da empresa mensalmente realiza a coleta de feedbacks entre os funcionários da empresa. Cada funcionário irá avaliar seu colega de equipe com uma nota de 0 a 10, tendo a opção de colocar um comentário. As respostas são coletadas de forma anônima. Todo mês essas respostas são registradas neste mesmo Google Planilhas (sempre sobrescrevendo os dados do mês anterior). Para auxiliar as analises desejadas pelo RH e, ao mesmo tempo, não sobrecarregar o time de Dados foi pensada essa automação, sendo esta a motivação desse projeto.
+
+## Project Organization
 ------------
 
     ├── LICENSE
@@ -57,7 +67,7 @@ Project Organization
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
 
 ---------
-# Visualizações
-NPS interno mensal médio por setor 
-NPS interno mensal médio por contratação
-Distribuição do NPS interno
+## Visualizações desejadas
+- NPS interno mensal médio por setor 
+- NPS interno mensal médio por contratação
+- Distribuição do NPS interno
